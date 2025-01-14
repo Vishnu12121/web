@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Room Container */
+#room-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#roomIdInput {
+  padding: 10px;
+  width: 250px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Chat Container */
+#chat-container {
+  width: 400px;
+  height: 600px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+#messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+#messages div {
+  margin-bottom: 10px;
+  padding: 8px;
+  background-color: #f0f8ff;
+  border-radius: 5px;
+  word-wrap: break-word;
+}
+
+#messages div img,
+#messages div video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Typing Indicator */
+#typing-indicator {
+  padding: 5px;
+  color: #888;
+  font-style: italic;
+  font-size: 14px;
+  height: 20px;
+}
+
+/* Input Container */
+#input-container {
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-top: 1px solid #ddd;
+}
+
+#usernameInput,
+#messageInput {
+  padding: 10px;
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#fileInput {
+  display: none;
+}
+
+#fileInput + label {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#fileInput + label:hover {
+  background-color: #218838;
+}
