@@ -1,0 +1,10 @@
+<div id="chat-container" style="display: none;">
+  <div id="messages"></div>
+  <div id="typing-indicator"></div>
+  <div id="input-container">
+    <input type="text" id="usernameInput" placeholder="Enter your name">
+    <input type="text" id="messageInput" placeholder="Type a message" oninput="notifyTyping()" onblur="notifyStopTyping()">
+    <button onclick="sendMessage()">Send</button>
+    <input type="file" id="fileInput" accept="image/*,video/*">
+  </div>
+</div>
